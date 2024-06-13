@@ -1,0 +1,6 @@
+databaseChangeLog:
+  - include:
+      file: liquibase/scripts/orders.sql
+
+  - include:
+      file: liquibase/scripts/users.sql
