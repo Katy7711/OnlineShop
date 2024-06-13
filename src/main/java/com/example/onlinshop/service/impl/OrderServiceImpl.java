@@ -1,7 +1,6 @@
 package com.example.onlinshop.service.impl;
 
 import com.example.onlinshop.Status;
-import com.example.onlinshop.controller.UserController;
 import com.example.onlinshop.dto.OrderDto;
 import com.example.onlinshop.entity.Order;
 import com.example.onlinshop.entity.User;
@@ -20,7 +19,7 @@ import org.springframework.transaction.annotation.Transactional;
 @RequiredArgsConstructor
 public class OrderServiceImpl implements OrderService {
 
-  private static final Logger log = LoggerFactory.getLogger(UserController.class);
+  private static final Logger log = LoggerFactory.getLogger(OrderServiceImpl.class);
   private final UserRepository userRepository;
   private final OrderRepository orderRepository;
 

@@ -1,6 +1,5 @@
 package com.example.onlinshop.service.impl;
 
-import com.example.onlinshop.controller.UserController;
 import com.example.onlinshop.dto.UserDto;
 import com.example.onlinshop.entity.User;
 import com.example.onlinshop.mapper.UserMapper;
@@ -21,7 +20,7 @@ import org.webjars.NotFoundException;
 @RequiredArgsConstructor
 public class UserServiceImpl implements UserService {
 
-  private static final Logger log = LoggerFactory.getLogger(UserController.class);
+  private static final Logger log = LoggerFactory.getLogger(UserServiceImpl.class);
   private final UserRepository userRepository;
   private final UserMapper userMapper;
 

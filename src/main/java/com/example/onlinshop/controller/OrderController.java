@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 @RestController
 public class OrderController {
-  private static final Logger log = LoggerFactory.getLogger(UserController.class);
+  private static final Logger log = LoggerFactory.getLogger(OrderController.class);
   private final OrderService orderService;
 
   @PostMapping("/order/add")
