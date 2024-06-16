@@ -57,7 +57,7 @@ public class UserController {
   }
 
   @DeleteMapping("/{id}")
-  public ResponseEntity<HttpStatus> removeAds(@PathVariable long id) {
+  public ResponseEntity<HttpStatus> removeUser(@PathVariable long id) {
     log.info("Request for delete user by id");
     if (userService.deleteUser(id)) {
       return ResponseEntity.ok().build();
